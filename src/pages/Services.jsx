@@ -16,49 +16,49 @@ const medicalServices = [
     title: "Medical Consumables and Disposables",
     description: "Single-use essentials ensuring safety, hygiene, and compliance.",
     image: k,
-    link: "/Medical_devices.jsx", // updated path
+     // updated path
   },
   {
     title: "Surgical Instruments",
     description: "Precision-engineered instruments for critical procedures.",
     image: a,
-    link: "/pages/surgical-instruments",
+    
   },
   {
     title: "Physiotherapy and Rehabilitation",
     description: "Advanced recovery and mobility enhancement solutions.",
     image: a,
-    link: "/pages/physiotherapy-rehabilitation",
+    
   },
   {
     title: "Dental Division",
     description: "Comprehensive dental equipment and clinical solutions.",
     image: a,
-    link: "/pages/dental-division",
+    
   },
   {
     title: "CSSD and Infection Control",
     description: "Sterilization and infection prevention systems.",
     image: a,
-    link: "/pages/cssd-infection-control",
+    
   },
   {
     title: "Emergency and PPE Supplies",
     description: "Critical emergency response and protection equipment.",
     image: a,
-    link: "/pages/emergency-ppe",
+    
   },
   {
     title: "Lab & Analytical",
     description: "Reliable diagnostic and analytical laboratory systems.",
     image: a,
-    link: "/pages/lab-analytical",
+    
   },
   {
     title: "Medical Furniture",
     description: "Ergonomic furniture designed for healthcare environments.",
     image: a,
-    link: "/pages/medical-furniture",
+   
   },
 ];
 
@@ -68,19 +68,19 @@ const tradingServices = [
     title: "Medical & Lab Furniture",
     description: "Functional furniture solutions for labs and hospitals.",
     image: a,
-    link: "/pages/medical-lab-furniture",
+   
   },
   {
     title: "Healthcare & General Furniture",
     description: "Durable furniture supporting healthcare operations.",
     image: a,
-    link: "/pages/healthcare-general-furniture",
+    
   },
   {
     title: "Lab & Analytical",
     description: "Trading of laboratory and analytical product portfolios.",
     image: a,
-    link: "/pages/lab-analytical-trading",
+
   },
 ];
 

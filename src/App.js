@@ -16,7 +16,6 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
-import Medical_devices from "./pages/Medical_devices";
 
 function App() {
   return (
@@ -30,7 +29,6 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
 
-        <Route path="/pages/Medical_devices" element={<Medical_devices />} />
 
       </Routes>
       <Footer />  {/* Global footer across all pages */}
