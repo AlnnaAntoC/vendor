@@ -1,7 +1,7 @@
 import React from "react";
 import "./Contact.css";
 // IMPORT THE IMAGE here so Webpack/Babel can process it correctly
-import bgImage from "../assets/contact.jpg"; 
+
 
 const Contact = () => {
   // Contact details based on the image provided (MAZAVA MEDICAL TRADING W.L.L)
@@ -29,16 +29,14 @@ const Contact = () => {
   return (
     <div className="contact-page-container">
       {/* 1. HERO SECTION (Contact Us Header) */}
-      <section 
-        className="contact-hero-section" 
-        // <<<<<<<<<<<<< CHANGE HERE: Apply image via inline style >>>>>>>>>>>>>
-        style={{ backgroundImage: `url(${bgImage})` }}
-      >
-        <div className="hero-top-padding"></div>
-        <div className="hero-content">
-          <h1 className="contact-title">Contact Us</h1>
+      <section className="services-hero">
+      <div className="services-hero-overlay">
+        <div className="services-hero-content">
+          <h1>Contact Us</h1>
+          
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* 2. MAIN CONTENT - Two Big Cards (Get in touch & Contact Info) */}
       <div className="contact-main-content">

@@ -54,6 +54,7 @@ const Navbar = () => {
 
         
         <button onClick={() => navigate("/contact")}>Contact Us</button>
+        
       </div>
     </nav>
   );

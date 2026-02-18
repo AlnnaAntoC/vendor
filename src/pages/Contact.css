@@ -22,7 +22,7 @@
   background-color: #f7f7f7; /* Light background for contrast */
   
   /* <<<<<<<<<<<<<<<< CHANGE HERE: ADD TOP WHITE SPACE FOR NAV BAR >>>>>>>>>>>>>>> */
-  padding-top: 100px; /* Adjust this value (e.g., 60px, 80px, 100px) based on your actual nav bar height */
+  padding-top: 110px; /* Adjust this value (e.g., 60px, 80px, 100px) based on your actual nav bar height */
 }
 
 /*
@@ -30,51 +30,65 @@
  * 1. HERO SECTION STYLES (MODIFIED HEIGHT & IMAGE PATH REMOVED)
  * --------------------------------
  */
-
-.contact-hero-section {
-  position: relative;
+.services-hero {
+  height: 50vh;
   width: 100%;
-  height: 350px; 
+  background-image: url("../assets/background.jpg"); /* replace with your image */
   background-size: cover;
   background-position: center;
-  overflow: hidden; 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end; 
-  align-items: center;
-}
-
-.hero-top-padding {
-  /* This was originally for a small space above the title, but the main padding-top 
-     on the container handles the navigation bar clearance now. */
-  height: 20px;
-}
-
-.hero-content {
-  width: 100%;
-  padding-bottom: 150px; 
-  text-align: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* parallax effect */
   position: relative;
-  z-index: 2; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.contact-hero-section::before {
-  content: '';
+/* Navy + Cyan strategic overlay */
+.services-hero-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  /* Overlay to match the image's cyan/teal tint */
-  background: rgba(0, 128, 128, 0.5); 
-  z-index: 1;
+  inset: 0;
+  background: linear-gradient(
+    rgba(6, 20, 44, 0.85),   /* navy */
+    rgba(4, 67, 78, 0.94) /* cyan */
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.contact-title {
-  font-size: 4rem;
-  font-weight: 700;
-  color: var(--color-text-light); 
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+/* Content container */
+.services-hero-content {
+  max-width: 900px;
+  padding: 0 20px;
+  color: #ffffff;
+}
+
+/* Heading */
+.services-hero-content h1 {
+  font-size: 3.7rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Caption */
+.services-hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+/* Responsive optimization */
+@media (max-width: 768px) {
+  .services-hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .services-hero-content p {
+    font-size: 1rem;
+  }
 }
 
 /*

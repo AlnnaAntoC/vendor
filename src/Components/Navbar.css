@@ -6,7 +6,7 @@
   left: 0;
   right: 0;
   height: 70px; /* adjust as needed */
-  padding: 0 40px;
+  padding:  40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,7 +25,7 @@
 }
 
 .logo-img {
-  height: 100px; /* bigger logo */
+  height: 80px; /* bigger logo */
   width: auto;
   object-fit: contain;
   transition: transform 0.3s ease;
